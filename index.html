@@ -1,0 +1,67 @@
+<!-- Created by maryaamah-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+    <fieldset id="username">
+    <h1>Enter Your Username</h1>
+    <b>Username:</b><input maxlength=24 type="text" id="textuser" />
+    <br />
+    <br />
+    <button onclick=userEnter()>Enter</button>
+    </fieldset>
+    <div id="gamestart" style="display: none">
+    <h2 id="namedisplay"></h2>
+    <span style="color: red"><b>score: </b></span><b id="scoreval"></b><progress id="scorebar" max=100 value=100></progress><b style="color: red" id="takescore"></b><br /><b>failed:</b><b id="failedsc"></b>
+    </div>
+    <br />
+    <br />
+    <div style="display: none" id="firstq">
+    <h2>1. which is the biggest continent in the World?</h2>
+    <button onclick=wrongans()>north America</button>
+    <button onclick=rightans1()>Asia</button>
+    <button onclick=wrongans()>Africa</button>
+    <button onclick=wrongans()>Australia</button>
+    </div>
+    <div style="display: none" id="secondq">
+    <h2>2. What is the Most Popular City in the World?</h2>
+    <button onclick=rightans2()>London</button>
+    <button onclick=wrongans()>Los Angelos City</button>
+    <button onclick=wrongans()>China Downtown</button>
+    <button onclick=wrongans()>New York City</button>
+    </div>
+    <div style="display: none" id="thirdq">
+    <h2>3. What is the Most Popular Country in the World?</h2>
+    <button onclick=wrongans()>Russia</button>
+    <button onclick=rightans3()>China</button>
+    <button onclick=wrongans()>England</button>
+    <button onclick=wrongans()>U.S.A</button>
+    </div>
+    <div style="display: none" id="fourthq">
+    <h2>4. What Year did World War Two Start?</h2>
+    <button onclick=wrongans()>1945</button>
+    <button onclick=wrongans()>1879</button>
+    <button onclick=rightans4()>1939</button>
+    <button onclick=wrongans()>1942</button>
+    </div>
+    <div style="display: none" id="fifthq">
+    <h2>5. What was the Answer to the Second Question?</h2>
+    <button onclick=wrongans()>Russia</button>
+    <button onclick=wrongans()>New York City</button>
+    <button onclick=wrongans()>Tetris</button>
+    <button onclick=rightans5()>London</button>
+    </div>
+    <div style="display: none" id="enddiv">
+    <h1 id="failedse" style="text-align: center; color: blue;"></h1>
+    <h1 style="text-align: center; color: green;">congratulations!</h1>
+    <h3 style="text-align: center">- maryaamah</h3>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>
+
+
+
